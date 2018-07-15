@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright (C) 2021 The LineageOS Project
+-->
+<resources>
+    <!-- Whether device has a notch -->
+    <bool name="config_haveNotch">true</bool>
+</resources>
+
