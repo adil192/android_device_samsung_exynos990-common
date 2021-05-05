@@ -29,7 +29,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung/hidl/power-libperfmgr
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(PLATFORM_PATH)/overlay
+    $(PLATFORM_PATH)/overlay \
+    $(PLATFORM_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
