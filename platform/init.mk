@@ -7,5 +7,6 @@ PRODUCT_PACKAGES += \
     init.exynos990.root.rc \
     init.exynos990.rc \
     init.exynos990.usb.rc \
+    init.debug.addition.rc \
     fstab.exynos990 \
     ueventd.exynos990.rc
