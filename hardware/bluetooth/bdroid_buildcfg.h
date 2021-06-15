@@ -27,6 +27,9 @@ static inline const char* BtmGetDefaultName()
     char product_device[PROPERTY_VALUE_MAX];
     property_get("ro.product.name", product_device, "");
 
+    if (strstr(product_device, "r8slte"))
+        return "Galaxy S20 FE";
+
     if (strstr(product_device, "x1sxxx"))
         return "Galaxy S20 5G";
 
