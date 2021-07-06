@@ -3,7 +3,4 @@ r_dir_file(system_app, cgroup)
 allow system_app proc_pagetypeinfo:file { read open getattr };
 allow system_app sysfs_zram:dir search;
 
-# Battery Health
-r_dir_file(system_app, sysfs_battery_supply);
-
 dontaudit system_app debugfs_tracing:file { read open };
