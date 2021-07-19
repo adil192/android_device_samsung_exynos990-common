@@ -13,8 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/samsung/exynos990-common/BoardConfigVendor.mk
-
 BUILD_TOP := $(shell pwd)
 
 PLATFORM_PATH := device/samsung/exynos990-common
