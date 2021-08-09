@@ -138,9 +138,10 @@ USE_XML_AUDIO_POLICY_CONF := 1
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 ### BLUETOOTH
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/hardware/bluetooth
 BOARD_CUSTOM_BT_CONFIG := $(PLATFORM_PATH)/hardware/bluetooth/libbt_vndcfg.txt
-BOARD_HAVE_BLUETOOTH_BCM := true
 
 ### GRAPHICS
 # hardware/interfaces/configstore/1.1/default/surfaceflinger.mk
@@ -215,13 +216,12 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 endif # BOARD_AVB_ENABLE
 
 ### WIFI
-BOARD_WLAN_DEVICE                := bcmdhd
+BOARD_HAS_QCOM_WLAN              := true
+BOARD_WLAN_DEVICE                := qcwcn
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 BOARD_HOSTAPD_DRIVER             := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-
-BOARD_WLAN_BCMDHD_SAE := true
 
 WIFI_RESET_IFACE_AFTER_MAC_CHANGE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
